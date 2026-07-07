@@ -1,0 +1,28 @@
+# Virtual Environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Streamlit cache
+.streamlit/cache/
+
+# Logs
+*.log
+
+# Large training datasets
+data/train_processed.csv
+data/train_processedmain.csv
+data/test_processed.csv
+data/val_processed.csv
+data/ev_synthetic_dataset.csv
+data/ev_stations.csv
