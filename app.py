@@ -269,13 +269,12 @@ def load_stations():
 
 @st.cache_data
 def load_history():
-    path = csv_path("train_processed.csv")
+    path = csv_path("history.csv")
     df = pd.read_csv(path, parse_dates=["timestamp"])
     df.columns = df.columns.str.lower()
     if 'utilization' in df.columns:
         df['utilization'] = pd.to_numeric(df['utilization'], errors='coerce').fillna(0.0)
     return df
-
 @st.cache_data
 def load_history_unscaled():
     df = load_history().copy()

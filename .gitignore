@@ -25,4 +25,3 @@ data/train_processedmain.csv
 data/test_processed.csv
 data/val_processed.csv
 data/ev_synthetic_dataset.csv
-data/ev_stations.csv
