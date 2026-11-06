@@ -436,7 +436,7 @@ with tab_map:
     )
 
     center = [stations_df['lat'].mean(), stations_df['lon'].mean()]
-    m = folium.Map(location=center, zoom_start=12, control_scale=True, tiles="CartoDB.DarkMatter", scrollWheelZoom=False)
+    m = folium.Map(location=center, zoom_start=12, control_scale=True, tiles="OpenStreetMap", scrollWheelZoom=False)
 
     # station markers
     for _, r in stations_df.iterrows():
